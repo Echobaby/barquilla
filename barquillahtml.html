@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: solid white;
+            margin: 0;
+            padding: 0;
+        }
+        #calculator {
+            background-color: navy;
+            border-radius: 15px;
+            width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px yellow(0, 0, 0, 0.2);
+        }
+        #display {
+            width: 300px;
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+        }
+        table input[type="button"] {
+            width: 75%;
+            height: 60px;
+            font-size: 20px;
+        }
+        input[type="button"]:hover {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <table>
+            <tr>
+                <td><input type="button" value="7" onclick="addToDisplay('7')"></td>
+                <td><input type="button" value="8" onclick="addToDisplay('8')"></td>
+                <td><input type="button" value="9" onclick="addToDisplay('9')"></td>
+                <td><input type="button" value="/" onclick="addToDisplay('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="addToDisplay('4')"></td>
+                <td><input type="button" value="5" onclick="addToDisplay('5')"></td>
+                <td><input type="button" value="6" onclick="addToDisplay('6')"></td>
+                <td><input type="button" value="*" onclick="addToDisplay('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="addToDisplay('1')"></td>
+                <td><input type="button" value="2" onclick="addToDisplay('2')"></td>
+                <td><input type="button" value="3" onclick="addToDisplay('3')"></td>
+                <td><input type="button" value="-" onclick="addToDisplay('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="clearDisplay()"></td>
+                <td><input type="button" value="0" onclick="addToDisplay('0')"></td>
+                <td><input type="button" value="=" onclick="calculate()"></td>
+                <td><input type="button" value="+" onclick="addToDisplay('+')"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
